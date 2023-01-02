@@ -69,7 +69,7 @@ export default function Home() {
           <LinkTree link="mailto:business@wahyudi.id" title="Business e-mail" />
         </section>
 
-        <section className="flex justify-center items-center gap-3 mt-8">
+        <section className="flex justify-center items-center gap-3 mt-8 mb-10">
           <Link href={socialMedia.instagram}>
             <div className="p-2 bg-slate-800 rounded-md">
               <FaInstagram className="text-3xl" />
