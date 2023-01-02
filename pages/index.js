@@ -15,6 +15,7 @@ const config = {
   description:
     "Personal Link Tree of Wahyudi as a Web Developer base in Makassar.",
   profileImage: "https://avatars.githubusercontent.com/u/102675086?v=4",
+  favIcon: "https://www.wahyudi.id/fav.png",
   link: "https://link.wahyudi.id",
 };
 
@@ -32,7 +33,7 @@ export default function Home() {
         <title>{config.title}</title>
         <meta name="description" content={config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={config.favIcon} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={config.link} />
         <meta property="og:title" content={config.title} />
