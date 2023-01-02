@@ -14,6 +14,8 @@ const config = {
   title: "Wahyudi - Web Developer",
   description:
     "Personal Link Tree of Wahyudi as a Web Developer base in Makassar.",
+  profileImage: "https://avatars.githubusercontent.com/u/102675086?v=4",
+  link: "https://link.wahyudi.id",
 };
 
 const socialMedia = {
@@ -31,11 +33,22 @@ export default function Home() {
         <meta name="description" content={config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={config.link} />
+        <meta property="og:title" content={config.title} />
+        <meta property="og:description" content={config.description} />
+        <meta property="og:image" content={config.profileImage} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={config.link} />
+        <meta property="twitter:title" content={config.title} />
+        <meta property="twitter:description" content={config.description} />
+        <meta property="twitter:image" content={config.profileImage} />
       </Head>
       <main className={`text-white md:max-w-md mx-auto ${roboto.className}`}>
         <section className="mt-10 text-center">
           <Image
-            src={"https://avatars.githubusercontent.com/u/102675086?v=4"}
+            src={config.profileImage}
             width={220}
             height={220}
             className="rounded-full mx-auto border w-44"
