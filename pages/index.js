@@ -15,8 +15,8 @@ const config = {
   description:
     "Personal Link Tree of Wahyudi as a Web Developer base in Makassar.",
   profileImage: "https://avatars.githubusercontent.com/u/102675086?v=4",
-  favIcon: "https://www.wahyudi.id/fav.png",
-  link: "https://link.wahyudi.id",
+  favIcon: "https://www.wahyudi.dev/fav.png",
+  link: "https://link.wahyudi.dev",
 };
 
 const socialMedia = {
@@ -59,14 +59,14 @@ export default function Home() {
         </section>
 
         <section className="uppercase mt-3">
-          <LinkTree link="https://wahyudi.id" title="Personal Web" />
+          <LinkTree link="https://wahyudi.dev" title="Personal Web" />
           <LinkTree
             link="https://losaritech.biz.id"
             title="Digital Solutions"
           />
           <LinkTree link="https://topup.monster" title="Topup Game Online" />
           <LinkTree link="https://meenikah.link" title="Undangan Digital" />
-          <LinkTree link="mailto:business@wahyudi.id" title="Business e-mail" />
+          <LinkTree link="mailto:business@wahyudi.dev" title="Business e-mail" />
         </section>
 
         <section className="flex justify-center items-center gap-3 mt-8 mb-10">
