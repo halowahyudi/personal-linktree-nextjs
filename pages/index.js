@@ -2,7 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import { Roboto_Mono } from "@next/font/google";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaTiktok,
+  FaGithub,
+} from "react-icons/fa";
 
 const roboto = Roboto_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -20,6 +26,7 @@ const config = {
 };
 
 const socialMedia = {
+  github: "https://www.github.com/halowahyudi",
   instagram: "https://www.instagram.com/halowahyudi",
   facebook: "https://www.facebook.com/halowahyudi",
   twitter: "https://twitter.com/halowahyudi",
@@ -52,41 +59,47 @@ export default function Home() {
             src={config.profileImage}
             width={220}
             height={220}
-            className="rounded-full mx-auto border w-44"
+            className="mx-auto border rounded-full w-44"
           />
-          <h1 className="mt-5 font-bold text-3xl">Wahyudi</h1>
+          <h1 className="mt-5 text-3xl font-bold">Wahyudi</h1>
           <h2 className="mt-3 tracking-tighter">Web Developer</h2>
         </section>
 
-        <section className="uppercase mt-3">
+        <section className="mt-3 uppercase">
           <LinkTree link="https://wahyudi.dev" title="Personal Web" />
           <LinkTree
             link="https://losaritech.biz.id"
             title="Digital Solutions"
           />
-          <LinkTree link="https://topup.monster" title="Topup Game Online" />
-          <LinkTree link="https://meenikah.link" title="Undangan Digital" />
-          <LinkTree link="mailto:business@wahyudi.dev" title="Business e-mail" />
+          <LinkTree
+            link="mailto:business@wahyudi.dev"
+            title="Business e-mail"
+          />
         </section>
 
-        <section className="flex justify-center items-center gap-3 mt-8 mb-10">
+        <section className="flex items-center justify-center gap-3 mt-8 mb-10">
           <Link href={socialMedia.instagram}>
-            <div className="p-2 bg-slate-800 rounded-md">
+            <div className="p-2 rounded-md bg-slate-800">
               <FaInstagram className="text-3xl" />
             </div>
           </Link>
+          <Link href={socialMedia.github}>
+            <div className="p-2 rounded-md bg-slate-800">
+              <FaGithub className="text-3xl" />
+            </div>
+          </Link>
           <Link href={socialMedia.facebook}>
-            <div className="p-2 bg-slate-800 rounded-md">
+            <div className="p-2 rounded-md bg-slate-800">
               <FaFacebook className="text-3xl" />
             </div>
           </Link>
           <Link href={socialMedia.twitter}>
-            <div className="p-2 bg-slate-800 rounded-md">
+            <div className="p-2 rounded-md bg-slate-800">
               <FaTwitter className="text-3xl" />
             </div>
           </Link>
           <Link href={socialMedia.tiktok}>
-            <div className="p-2 bg-slate-800 rounded-md">
+            <div className="p-2 rounded-md bg-slate-800">
               <FaTiktok className="text-3xl" />
             </div>
           </Link>
@@ -100,7 +113,7 @@ const LinkTree = (props) => {
   const { link = "#", title = "" } = props;
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">
-      <div className="bg-slate-800 hover:bg-slate-700 mb-4 mx-4 py-5 rounded-md flex flex-row justify-center items-center">
+      <div className="flex flex-row items-center justify-center py-5 mx-4 mb-4 rounded-md bg-slate-800 hover:bg-slate-700">
         <span className="text-center text-md">{title}</span>
       </div>
     </Link>
