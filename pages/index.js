@@ -68,7 +68,7 @@ export default function Home() {
         <section className="mt-3 uppercase">
           <LinkTree link="https://wahyudi.dev" title="Personal Web" />
           <LinkTree
-            link="https://losaritech.biz.id"
+            link="https://losaritech.com"
             title="Digital Solutions"
           />
           <LinkTree
